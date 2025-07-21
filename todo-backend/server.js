@@ -10,7 +10,7 @@ const app = express();
 
 // ✅ CORS setup for Vercel frontend
 app.use(cors({
-  origin: ['https://to-do-app-mern-plum.vercel.app/'],
+  origin: ['https://to-do-app-mern-plum.vercel.app'],
   credentials: true
 }));
 

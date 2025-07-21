@@ -6,17 +6,11 @@ const cors = require('cors');
 const authRoutes = require('./routes/auth');
 const taskRoutes = require('./routes/tasks');
 
-const allowedOrigins = [
-  'http://localhost:3000',
-  'https://to-do-app-mern-plum.vercel.app',
-  'https://to-do-app-mern-git-main-suraj-0007s-projects.vercel.app',
-  'https://to-do-app-mern-j0qyme3i3-suraj-0007s-projects.vercel.app'
-];
-
 const app = express();
 
+// ✅ TEMPORARY: Allow all origins for testing (do not use in production)
 app.use(cors({
-  origin: true
+  origin: true,
   credentials: true
 }));
 
